@@ -2,6 +2,18 @@
 body{
     font-family: 'Open Sans', sans-serif;
 }
+
+.section-title{
+    color: #181818;
+    text-align: center;
+    font-size: 35px;
+    font-weight: 700;
+}
+.section-description{
+    color: #757575;
+    text-align: center;
+    font-size: 18px;
+}
 /* nav related styles */
 nav {
     display: flex;
@@ -25,7 +37,7 @@ nav {
 }
 /* nav-title is a class */
 .nav-title {
-    color: var(--Dark-01, #181818);
+    color: #181818;
     font-size: 45px;
     font-weight: 800;
 
@@ -49,14 +61,59 @@ nav a{
 /* header is a class */
 .header{
     background-color: #FFF8F3;
+    background-image: url(../images/header_bg.png);
+    background-repeat: no-repeat;
+    background-position: bottom right;
 }
 .banner{
-    padding-left: 30px 30px 30px 150px;
+    padding-left: 30px 30px 0px 150px;
     /* display flex dile pasha pashi hoi, upor nich na hoea */
     display: flex;
     align-items: center;
+    /* keeping things middle */
+    justify-content: space-between;
+}
+.banner-content{
+    max-width: 500px;
 }
 .banner .profile-pic{
     width: 500px;
 
+}
+.banner-greeting{
+    font-size: 45px;
+    color: #474747;
+    margin-bottom: 0;
+}
+.banner-title{
+    font-size: 85px;
+    font-style: normal;
+    font-weight: 700;
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
+/* main section styles */
+/* main is a section  not a class */
+main{
+    max-width: 1140px;
+    margin: 0 auto;
+}
+/* about section styles */
+.about{
+    padding: 130px;
+    border-radius: 10px;
+    background: #FFF8F3;
+    margin: 130px 0;
+}
+.about-info-container{
+    display: flex;
+    justify-content: space-around;
+
+}
+.about-info{
+    text-align: center;
+}
+/* using id */
+#what-i-do-description{
+    padding: 30px 150px;
 }
